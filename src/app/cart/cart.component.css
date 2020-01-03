@@ -1,0 +1,7 @@
+.book-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.book-card {
+  width: 150px;
+}

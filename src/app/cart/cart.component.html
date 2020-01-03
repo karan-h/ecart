@@ -1,0 +1,6 @@
+<div class="book-cards">
+  <div class="book-card" *ngFor="let item of cart; let i = index">
+    <app-book-card [book]="item" [option]="option" (bookId)="getBook($event)">
+    </app-book-card>
+  </div>
+</div>

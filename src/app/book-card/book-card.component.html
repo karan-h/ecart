@@ -1,0 +1,11 @@
+<div class="card" [routerLink]="['books', book['id']]">
+  <span class="item"> Name : {{ book["name"] }} </span>
+  <span class="item"> Category : {{ book["category"] }} </span>
+  <span class="item"> Price : {{ book["price"] }} </span>
+  <input
+    type="submit"
+    value="{{ buttonText }}"
+    (click)="addToCart()"
+    *ngIf="option"
+  />
+</div>
